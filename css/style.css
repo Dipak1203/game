@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark: #350363;
+    --background:#d3bdb0;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    margin: auto;
+    background: var(--dark);
+}
+
+main{
+    width: 30vw;
+    text-align: center;
+    background-color: var(--background);
+    border: 0.8ren solid var(--dark);
+    border-radius: 1rem;
+    /* padding: 8rem 5rem; */
+    color: #1f2933;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+p{
+    font-size: 2rem;
+}
+
+.image{
+    width: 30%;
+    max-height: 22rem;
+    height: auto;
+    margin: 1rem 0 4rem 0;
+    border-radius: 3px;
+}
+
+.button-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+button{
+    min-width: 28rem;
+    background-image: linear-gradient(
+        92.88deg,
+        #455eb5 9.16%,
+        #5643ff 43.89%,
+        #673fd7 64.89%
+    );
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 2.5rem 6rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all 0.5s;
+    user-select: none;
+    text-transform: capitalize;
+}
+button:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 30px;
+    transition-duration: 0.1s;
+}
+button:last-child{
+    background: var(--dark);
+}
+
+#welcomeScreen{
+    /* display: none; */
+}
+#gameArea{
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    /* display: none; */
+}
+
+#newGameButton button{
+    margin: 2rem 0;
+}
+.stats{
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.info span{
+    font-size: 2rem;
+    color: #ff0511;
+}
+input{
+    border: 0.1rem solid lightgray;
+    background:transparent;
+    margin: 4rem 0;
+    padding: 2rem 0;
+    width: 25rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
+
+
+@media (max-width:1200px) {
+    body{
+        width: 100vw;
+    }
+    main{
+        width: 50vw;
+        padding: 2rem;
+    }
+    input{
+        width: 20rem;
+    }
+}
+
+@media (max-width:800px) {
+    body{
+        width: 100vw;
+    }
+    main{
+        width:80vw;
+        padding: 2rem;
+    }
+    #welcomeScreen{
+        text-transform: capitalize;
+        font-size: 2rem;
+    }
+}
